@@ -1,0 +1,147 @@
+<!-- The introduction of html -->
+
+<!-- Basically, you gotta use tag "< >"
+# Start 'xxxx' tag - <xxxx>
+# End 'xxxx' tag - </xxxx>
+
+### 4 basic tags in html
+1. doctype - Which version of html you are gonna use
+2. html - Indicate the start/end point of html body
+3. head - Setting the variable parameter, color, importing css files, and so on.
+4. body - Text you want to show on your website
+
+### Other basic tags
+1. h1, h2, h3 ,... - Header (Font is smaller as the number becomes larger)
+2. a - Put the link
+3. p - Paragraph
+4. ul, li - Bullet points (箇条書き)
+
+### Using only initial tags "<xxxx>"
+1. img - Display the image
+2. br - new line
+3. hr - underline
+-->
+
+
+<!-- Select version of HTML5 (the latest one - 2014) -->
+<!doctype html>
+<!-- Here is the start from html body itself -->
+<!-- Setting the language -->
+<html lang='en'>
+
+<!-- Setting -->
+<head>
+  <!-- Specify character encoding -->
+  <meta charset="utf-8">
+  <!-- Set the title (Visualize in web browser's tab) -->
+  <title> The example of how to write HTML </title>
+
+  <!-- Add css style -->
+  <style>
+    /* color option */
+    h1 {color: gray}
+    h2 {color: red}
+
+    /* background color option */
+    h3 {background: lightgray; color: white}
+
+    /* for the Link tag */
+    a {background: lightgrey}
+
+    /* for id */
+    #break {color: blue}
+
+    /* for class */
+    .Bullet {color: green}
+
+    /* for inside of the class */
+    /* for underline */
+    #break #break2 {border-bottom: solid 1px black}
+
+    /* for text position */
+    #break h4 {background: lightgray;
+       font-size: 20px;
+       text-align: center}
+  </style>
+
+  <!-- Setting -->
+
+  <!-- Setting -->
+
+</head>
+
+<!-- Body part -->
+<body>
+
+  <h1> Header part </h1>
+  <h2> Header2 part</h2>
+  <h3> Header3 part</h3>
+  <h3> Based on
+    <a href="https://saruwakakun.com/html-css/basic/html">
+      this website
+    </a>
+  </h3>
+
+  <!-- Put the link -->
+  <!-- with text -->
+  <a href="https://sites.google.com/view/rkiuchi/home">
+    <h3> Put the link </h3>
+  </a>
+  <!-- with image -->
+  <a href="https://sites.google.com/view/rkiuchi/home">
+    <img src="Image/Clouds_Rest.jpg" alt="Clouds_Rest"
+    width="10%" height="10%">
+  </a>
+
+  <!-- Body text and adding new line -->
+  <p class='first'> First line of text </p>
+  <p id='second1'> Second line of text </p>
+  <p> Third line of text </p>
+
+  <!-- Bullet points -->
+  <h3> Bullet points </h3>
+  <ul>
+    <li class='First'> First point </li>
+    <li id='second2'> Second point </li>
+    <li> Third point </li>
+    <li> <h4> Fourth important point </h4> </li>
+  </ul>
+  <!-- Bullet points with numbers -->
+  <h3> Bullet points with numbers </h3>
+  <div class="Bullet">
+    <ol>
+      <li> First point </li>
+      <li> Second point </li>
+      <li> Third point </li>
+      <li> <h4> Fourth important point </h4> </li>
+    </ol>
+  </div>
+
+
+  <!-- New lines -->
+  <div id="break">
+    <br> new line
+    <div id="break2">
+      <br> new line
+    </div>
+    <br> <h4> new line </h4>
+  </div>
+
+
+  <!-- Put the image -->
+  <!-- You can select size as the percentage -->
+  <h3> Put the image </h3>
+  <img src="Image/Clouds_Rest.jpg" alt="Clouds_Rest"
+  width="70%" height="70%">
+  <!-- Or actual size -->
+  <img src="Image/Clouds_Rest.jpg" alt="Clouds_Rest"
+  width="300" height="300">
+
+
+
+
+
+
+</body>
+
+</html>
