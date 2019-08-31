@@ -1,2 +1,2 @@
 # rkiuchir.github.io
-For the website
+My personal website
