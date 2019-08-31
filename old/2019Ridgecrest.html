@@ -6,17 +6,20 @@
   <!-- Specify character encoding -->
   <meta charset="utf-8">
   <!-- Set the title (Visualize in web browser's tab) -->
-  <title> The example of how to write HTML </title>
+  <title> R.Kiuchi 2019 Ridgecrest EQ </title>
 
   <!-- Add css style -->
   <style>
     /* background color option */
-    h1 {color: gray; text-align: center}
-    h3 {text-align: right}
+    h1 {color: gray; text-align: center; padding: 10px}
 
-    .list {text-align: center}
+    .list {text-align: center; padding: 10px}
     .list > ul {display: inline-block}
     .list > ul > li {text-align: left}
+
+    .footer > h3 {text-align: right; padding: 40px; padding-right: 80px}
+
+    .Plotly {padding-left: 20px}
 
     /* for the Link tag */
     a {background: lightgrey}
@@ -35,8 +38,12 @@
     #break h4 {background: lightgray;
        font-size: 20px;
        text-align: center}
-
   </style>
+
+  <!-- For Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <style>body{ margin:0 100; background:whitesmoke}</style>
 
 </head>
 
@@ -49,17 +56,25 @@
     <ul>
       <li> 72hrs aftershocks after the 1st event (M6.4)  </li>
       <li> Plot for M > 0 </li>
-      <li> The dataset is downloaded from
-       </li>
+      <li> The dataset is downloaded from the
+        <a href=https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php>
+          USGS webpage
+        </a>
+      </li>
     </ul>
   </div>
 
-  <h3>
-    <a href="https://sites.google.com/view/rkiuchi/home">
-      Back to main page
-    </a>
-  </h3>
+  <div class="Plotly">
+    ''' + CA_plot + '''
+  </div>
 
+  <div class="footer">
+    <h3>
+      <a href="https://sites.google.com/view/rkiuchi/home">
+        Back to main page
+      </a>
+    </h3>
+  </div>
 
 </body>
 

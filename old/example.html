@@ -37,6 +37,9 @@
   <title> The example of how to write HTML </title>
 
   <!-- Add css style -->
+  <link rel="stylesheet" href="css/example.css">
+
+  <!--
   <style>
     /* color option */
     h1 {color: gray}
@@ -54,15 +57,23 @@
     /* for class */
     .Bullet {color: green}
 
+    .top_menu {padding-right: 40px; background: dimgray;
+      width: auto; height: 6vw}
+    ::selection {background: lightgray; color: white}
+    .top_menu ul {text-align: right; line-height: 6vw}
+    .top_menu ul li {display: inline-block; width: auto; height: auto;
+    font-size: 1.5vw; padding-right: 15px}
+
     /* for inside of the class */
     /* for underline */
     #break #break2 {border-bottom: solid 1px black}
 
     /* for text position */
-    #break h4 {background: lightgray;
+    #break > h4 {background: lightgray;
        font-size: 20px;
        text-align: center}
   </style>
+  -->
 
   <!-- Setting -->
 
@@ -73,7 +84,25 @@
 <!-- Body part -->
 <body>
 
-  <h1> Header part </h1>
+  <!-- Main menu -->
+  <div class="top_menu">
+    <ul>
+      <li> Top Page </li>
+      <li>
+        <a href="about_us.html"> About us </a>
+      </li>
+      <li>
+        <a href="third.html"> Third Page </a>
+      </li>
+      <li>
+        <a href="fourth.html"> Event Page </a>
+      </li>
+    </ul>
+  </div>
+
+    <h1> Title </h1>
+
+
   <h2> Header2 part</h2>
   <h3> Header3 part</h3>
   <h3> Based on

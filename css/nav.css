@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hoge2A{
+  background-color: #fff
+}
+
+/*hamberger menu*/
+.menu{
+    height: 20px;
+    position: fixed;
+    right: 25px;
+    top: 20px;
+    width: 30px;
+    z-index: 99;
+}
+.menu__line{
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition:transform .3s;
+    width: 100%;
+    z-index: 98;
+}
+.menu__line--center{
+    top: 9px;
+    z-index: 98;
+}
+.menu__line--bottom{
+    bottom: 0;
+    z-index: 98;
+}
+.menu__line--top.active{
+    top: 8px;
+    transform: rotate(45deg);
+    z-index: 98;
+}
+.menu__line--center.active{
+    transform:scaleX(0);
+}
+.menu__line--bottom.active{
+    bottom: 10px;
+    transform: rotate(135deg);
+    z-index: 98;
+}
+.menu_triangle{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-style: solid;
+  border-width: 0 80px 80px 0;
+  border-color: transparent #c0c0c0 transparent transparent;
+  z-index: 97;
+}
+.menu_triangle.active{
+  transform:scaleX(0);
+}
+
+/*gnav*/
+.gnav{
+    background: rgba(0,0,0,0.7);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+}
+.gnav__wrap{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.gnav__menu{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+}
+.gnav__menu__item{
+    margin: 40px 0 40px 100px;;
+    list-style-type: none;
+    opacity: 0;
+}
+.gnav__menu__item a{
+    color: #d3d3d3;
+    font-family: 'Courier New';
+    font-size: 1.8em;
+    font-weight: 100;
+    padding: 20px;
+    text-decoration: none;
+    transition: .5s;
+    white-space: nowrap;
+}
+.gnav__menu__item a:hover{
+    color: #fff;
+  }
