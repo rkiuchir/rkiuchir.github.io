@@ -50,7 +50,11 @@
 
 .layer{
   height: 100%;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.88);
+}
+.layer_index_pub{
+  height: 100vh;
+  background: rgba(255,255,255,0.88);
 }
 .Title{
   color: var(--color-text);
