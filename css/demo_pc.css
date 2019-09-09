@@ -1,0 +1,139 @@
+:root {
+    --color-text: #696969;
+}
+
+.bgimage_home{
+  background:url(../Image/Zion.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 140vh;
+  padding: 0px;
+  z-index: 0;
+  background-attachment: fixed;
+}
+.bgimage_aboutme{
+    background:url(../Image/MtDana.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0px;
+    z-index: 0;
+    background-attachment: fixed;
+}
+.bgimage_presentation{
+    background:url(../Image/Forrest_Gump.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0px;
+    z-index: 0;
+    background-attachment: fixed;
+}
+.bgimage_publication{
+    background:url(../Image/Clouds_Rest.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 140vh;
+    padding: 0px;
+    z-index: 0;
+    background-attachment: fixed;
+}
+.bgimage_earthquakes{
+    background:url(../Image/Monument_Valley.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0px;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.layer{
+  height: 100%;
+  background: rgba(255,255,255,0.88);
+}
+.layer_index_pub{
+  height: 140vh;
+  background: rgba(255,255,255,0.88);
+}
+.Title{
+  color: var(--color-text);
+  font-family: 'Helvetica Neue';
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  padding: 150px;
+}
+.divide{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #696969;
+}
+
+.BgTheme{
+  background: #fff;
+  height: 10vh;
+  padding: 0px;
+}
+.Header1{
+  color: var(--color-text);
+  font-family: 'Helvetica Neue';
+  font-size: 2.5em;
+  font-weight: 200;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Text{
+  color: var(--color-text);
+  font-family: 'Helvetica Neue';
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.Text_list{
+  color: var(--color-text);
+  font-family: 'Helvetica Neue';
+  font-size: 1em;
+  font-weight: 400;
+  padding: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.Text_right{
+  text-align: right;
+}
+.Text_left{
+  text-align: left;
+}
+.Text_center{
+  text-align: center;
+}
+.Text p {
+  padding: 2px;
+}
+.Empty {
+  margin-top: 1em;
+}
+.Bold{
+  font-weight: 600;
+}
+.Indent{
+  text-indent: 2em;
+}
+.List{
+  padding-left: 2%;
+}
+.List li{
+  padding-bottom: 2%;
+}
+.Author{
+  font-weight: 600;
+}
+.TopPadding{
+  padding-top: 20%;
+}
