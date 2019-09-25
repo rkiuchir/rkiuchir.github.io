@@ -82,12 +82,12 @@
     transform: translateX(-50%);
     width: 170px;
 }
-.gnav__menu__item{
+.gnav__menu__item, .gnav__menu__current{
     margin: 40px 0 40px 100px;;
     list-style-type: none;
     opacity: 0;
 }
-.gnav__menu__item a{
+.gnav__menu__item a, .gnav__menu__current a{
     color: #d3d3d3;
     font-family: 'Courier New';
     font-size: 1.8em;
@@ -97,6 +97,6 @@
     transition: .5s;
     white-space: nowrap;
 }
-.gnav__menu__item a:hover{
+.gnav__menu__item a:hover, .gnav__menu__current a:hover{
     color: #fff;
   }

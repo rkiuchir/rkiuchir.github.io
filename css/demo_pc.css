@@ -2,6 +2,38 @@
     --color-text: #696969;
 }
 
+/* Menu bar */
+.nav_hmenu{
+　display: table;
+　margin: 0 auto;
+　padding: 0;
+　width: 80%;
+　text-align: center;
+}
+.hmenu_other{
+　display: table-cell;
+　min-width: 50px;
+}
+.hmenu_other a{
+　display: block;
+　width: 100%;
+　padding: 10px 0;
+　text-decoration: none;
+　color: #555;
+　font-weight: bold;
+}
+.current{
+　background-color: #DEEBF7;
+}
+.current a{
+　color: #555;
+}
+.hmenu_other:hover{
+　background-color: #FFF2CC;
+}
+/* Menu bar */
+
+
 .bgimage_home{
   background:url(../Image/Zion.jpg) no-repeat;
   background-position: 50% 50%;
@@ -63,6 +95,7 @@
   font-weight: 200;
   text-align: center;
   padding: 150px;
+  padding-top: 300px;
 }
 .divide{
   width: 80%;
