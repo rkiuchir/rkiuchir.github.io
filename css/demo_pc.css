@@ -33,7 +33,7 @@
 }
 /* Menu bar */
 
-
+/* Background */
 .bgimage_home{
   background:url(../Image/Zion.jpg) no-repeat;
   background-position: 50% 50%;
@@ -79,6 +79,40 @@
     z-index: 0;
     background-attachment: fixed;
 }
+/* Background */
+
+/* Profile photo */
+.index_photo{
+  padding-right: 0%;
+  padding-left: 5%;
+}
+.index_photo img{
+  width: 30%;
+  height: 30%;
+  float: left;
+}
+.index_name{
+  padding-top: 15%;
+  text-align: right;
+}
+/* Profile photo */
+
+/* Profile photo */
+.aboutme_photo{
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 10%;
+}
+.aboutme_photo img{
+  width: 30%;
+  height: 30%;
+  float: left;
+}
+.aboutme_name{
+  padding-top: 12.5%;
+  text-align: right;
+}
+/* Profile photo */
 
 .layer{
   height: 100%;
