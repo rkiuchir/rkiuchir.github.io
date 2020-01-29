@@ -89,8 +89,12 @@
   height: 100%;
   background: rgba(255,255,255,0.88);
 }
+.layer_index_home{
+  height: 230vh;
+  background: rgba(255,255,255,0.88);
+}
 .layer_index_pub{
-  height: 160vh;
+  height: 240vh;
   background: rgba(255,255,255,0.88);
 }
 .Title{
@@ -173,4 +177,53 @@
 }
 .TopPadding{
   padding-top: 20%;
+}
+
+/* Social media icons added on 1/28/2020*/
+.Social{
+  text-align: center;
+}
+/*
+.btn{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin:10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  overflow: hidden;
+  position: relative;
+}
+*/
+.btn{
+  display: inline-block;
+  color: var(--color-text);
+  margin: 10px;
+}
+.btn i{
+  line-height: 90px;
+  font-size: 40px;
+  transition: 0.2s;
+}
+.fa-github:hover {
+  transform: scale(1.2);
+  color: #6e5494;
+}
+.fa-twitter:hover {
+  transform: scale(1.2);
+  color: #55acee;
+}
+.fa-linkedin-in:hover {
+  transform: scale(1.2);
+  color: #007bb5;
+}
+
+/* Footer */
+.footer{
+  text-align: center;
+  color: var(--color-text);
+  font-family: 'Helvetica Neue';
+  font-size: 12px;
+  padding-bottom: 15px;
 }
