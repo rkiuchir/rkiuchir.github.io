@@ -8,7 +8,8 @@
   background:url(../Image/Zion.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  min-height: 160vh;
+  width: 100%;
+  min-height: auto;
   padding: 0px;
   z-index: 0;
   background-attachment: fixed;
@@ -17,7 +18,8 @@
     background:url(../Image/MtDana.jpg) no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    min-height: 100vh;
+    width: 100%;
+    min-height: auto;
     padding: 0px;
     z-index: 0;
     background-attachment: fixed;
@@ -26,7 +28,8 @@
     background:url(../Image/Forrest_Gump.jpg) no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    min-height: 100vh;
+    width: 100%;
+    min-height: auto;
     padding: 0px;
     z-index: 0;
     background-attachment: fixed;
@@ -35,7 +38,8 @@
     background:url(../Image/Clouds_Rest.jpg) no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    min-height: 160vh;
+    width: 100%
+    min-height: auto;
     padding: 0px;
     z-index: 0;
     background-attachment: fixed;
@@ -44,7 +48,8 @@
     background:url(../Image/Monument_Valley.jpg) no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    min-height: 100vh;
+    width: 100%;
+    min-height: auto;
     padding: 0px;
     z-index: 0;
     background-attachment: fixed;
@@ -90,11 +95,13 @@
   background: rgba(255,255,255,0.88);
 }
 .layer_index_home{
-  height: 230vh;
+  width: 100%;
+  height: auto;
   background: rgba(255,255,255,0.88);
 }
 .layer_index_pub{
-  height: 240vh;
+  width: 100%;
+  height: auto;
   background: rgba(255,255,255,0.88);
 }
 .Title{
