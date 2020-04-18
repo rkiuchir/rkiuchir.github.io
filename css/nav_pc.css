@@ -60,6 +60,7 @@
   font-family: 'Helvetica Neue';
   font-size: 1.1em;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .gnav__menu__current a:hover {
@@ -67,6 +68,7 @@
   font-family: 'Helvetica Neue';
   font-size: 1.1em;
   font-weight: 600;
+  text-decoration: none;
 }
 
 
@@ -102,7 +104,31 @@
   transform: scale(0, 1);
   transform-origin: center top;
   transition: transform .4s;
+  text-decoration: none;
 }
 .gnav__menu__item a:hover::after, .gnav__menu__current a:hover::after {
   transform: scale(1, 1);
+}
+
+/* Change the navigation bar in event page */
+.gnav__event a, .gnav__event__current a{
+  color: white;
+  padding: 15px 5px;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.gnav__event__current a{
+  font-weight: 600;
+}
+.gnav__event a:hover, .gnav__event__current a:hover {
+  color: white;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.gnav__event__current a:hover{
+  font-weight: 600;
+}
+.gnav__event .gnav__event__current a::after{
+  background: white;
+  bottom: 12px;
 }
