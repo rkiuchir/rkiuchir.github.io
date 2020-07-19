@@ -3,13 +3,12 @@
  padding: 0px;
 }
 
-:root {
-    --color-text: #696969;
-}
-
-
 .hoge2A{
   background-color: #fff
+}
+
+:root {
+    --color-text: #505050;
 }
 
 /* Menu bar */
