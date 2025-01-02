@@ -60,15 +60,18 @@
 .index_photo{
   padding-right: 0%;
   padding-left: 5%;
-}
-.index_photo img{
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
   float: left;
 }
+
 .index_name{
   padding-top: 15%;
   text-align: right;
+  font-family: 'Helvetica Neue';
+  font-size: 2.0em;
+  font-weight: 200;
+  padding-left: 5%;
 }
 /* Profile photo */
 
@@ -90,18 +93,40 @@
 /* Profile photo */
 
 
-.layer{
+.layer_home{
+  min-height: 100vh;
   height: 100%;
   background: rgba(255,255,255,0.88);
 }
+.layer_aboutme{
+  min-height: 100vh;
+  max-height: 400vh;
+  background: rgba(255,255,255,0.88);
+}
+.layer_publication_top{
+  min-height: 100vh;
+  height: 100vh;
+  background: rgba(255,255,255,0.88);
+}
+.layer_publication{
+  min-height: 100vh;
+  max-height: 250vh;
+  background: rgba(255,255,255,0.88);
+}
+.layer_presentation_top{
+  min-height: 100vh;
+  height: 100vh;
+  background: rgba(255,255,255,0.88);
+}
+.layer_presentation{
+  min-height: 100vh;
+  max-height: 1000vh;
+  background: rgba(255,255,255,0.88);
+}
 .layer_index_home{
-  width: 100%;
-  height: auto;
   background: rgba(255,255,255,0.88);
 }
 .layer_index_pub{
-  width: 100%;
-  height: auto;
   background: rgba(255,255,255,0.88);
 }
 .Title{
@@ -143,8 +168,19 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.profile_text{
+  color: var(--color-text);
+  font-family: 'Helvetica Neue';
+  font-size: 1.1em;
+  font-weight: 400;
+  padding-top: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .Affiliation{
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 .Thesis{
   display: inline;
@@ -243,4 +279,42 @@
   font-family: 'Helvetica Neue';
   font-size: 12px;
   padding-bottom: 15px;
+}
+
+
+.section_aboutme {
+  max-height: 400vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.section_publication_top {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.section_publication {
+  max-height: 250vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.section_presentation_top {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.section_presentation {
+  max-height: 1000vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
