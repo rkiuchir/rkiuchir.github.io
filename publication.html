@@ -8,18 +8,19 @@
 <head>
   <!-- Specify character encoding -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Set the title (Visualize in web browser's tab) -->
   <title> Publications - R. Kiuchi </title>
 
   <!-- Add css style -->
-  <link rel="stylesheet" href="./css/divider.css">
+  <link rel="stylesheet" href="assets/css/divider.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
   <!-- Add javascript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="javascript/nav.js"></script>
+  <script type="text/javascript" src="assets/js/nav.js"></script>
 
   <!-- Setting -->
 
@@ -40,20 +41,20 @@
 <body>
 
   <!-- hamberger menu -->
-  <a class="menu">
+  <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
       <span class="menu_triangle"></span>
       <span class="menu__line menu__line--top"></span>
       <span class="menu__line menu__line--center"></span>
       <span class="menu__line menu__line--bottom"></span>
-  </a>
-  <nav class="gnav">
+  </button>
+  <nav class="gnav" id="site-navigation" aria-label="Main navigation">
       <div class="gnav__wrap">
           <ul class="gnav__menu">
-              <li class="gnav__menu__item"><a href="./index.html">Home</a></li>
-              <li class="gnav__menu__item"><a href="./aboutme.html">About me</a></li>
+              <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+              <li class="gnav__menu__item"><a href="aboutme.html">About me</a></li>
               <li class="gnav__menu__item"><a href="presentation.html">Presentations</a></li>
               <li class="gnav__menu__current"><a href="publication.html">Publications</a></li>
-              <li class="gnav__menu__item"><a href="JMA_web.html">Earthquakes</a></li>
+              <li class="gnav__menu__item"><a href="visualizations/index.html">Earthquakes</a></li>
               <li class="gnav__menu__item"><a href="https://rkiuchir.github.io/blog/">Blog-JPN</a></li>
               <li class="gnav__menu__item"><a href="https://medium.com/@rkiuchir">Blog-EN</a></li>
           </ul>

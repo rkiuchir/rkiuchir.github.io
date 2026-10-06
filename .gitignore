@@ -1,0 +1,6 @@
+# Local macOS metadata
+.DS_Store
+.AppleDouble
+# Editor and temporary files
+*.swp
+*~

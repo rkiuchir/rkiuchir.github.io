@@ -1,0 +1,7 @@
+body { margin: 0; color: #393939; background: #fafafa; font: 1rem/1.7 system-ui, sans-serif; }
+main { max-width: 800px; margin: auto; padding: 48px 24px; }
+a { color: #245b87; }
+h1 { line-height: 1.2; }
+ul { padding-left: 24px; }
+li { margin: 16px 0; }
+small { color: #626262; white-space: nowrap; }

@@ -1,0 +1,5 @@
+@import url(main_pc.css) screen and (min-width: 1024px);
+@import url(main_smartphone.css) screen and (max-width: 1023.98px);
+@import url(nav_pc.css) screen and (min-width: 1024px);
+@import url(nav_smartphone.css) screen and (max-width: 1023.98px);
+@import url(event_pc.css) screen and (min-width: 1024px);

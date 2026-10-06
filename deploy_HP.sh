@@ -1,8 +1,4 @@
-# push for repository
-git add .
-msg="Update: `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
-fi
-git commit -m "$msg"
-git push -f origin master
+#!/bin/sh
+# Compatibility entry point; keep publication logic in deploy.sh.
+set -eu
+exec sh "$(dirname "$0")/deploy.sh" "$@"
