@@ -17,23 +17,21 @@ assets/
 visualizations/
   index.html               Visualization directory
   *.html                   Saved Plotly visualizations and earthquake pages
-archive/
-  legacy/                  Previous website versions (formerly old/)
-  drafts/                  Prototypes (formerly UnderConst/)
-  original-images/         Original-resolution source images
 scripts/
   publish.sh               Push reviewed commits on the current branch
   check_links.py           Check local HTML and CSS references
 ```
 
-The root-level visualization HTML files and HTML files in `old/` and
-`UnderConst/` are compatibility redirects. Edit the destination files instead.
+The root-level visualization HTML files are compatibility redirects.
+Edit the destination files in `visualizations/` instead. The underscore-named
+spherical topography pages redirect to their equivalent canonical pages.
 `deploy.sh` and `deploy_HP.sh` are compatibility entry points for `scripts/publish.sh`.
 Keep `favicon.ico` at the root for browser discovery.
 
-`archive/` is for organization, **not private storage**: these files remain in the
-public repository and can be served by the website. Historical pages may retain
-missing dependencies from their original versions; they are not the active site.
+Historical pages (`archive/`, `old/`, `UnderConst/`), the experimental
+`JMA_web_temp.html`, and the unfinished `event2.html` have been removed.
+Their old URLs are no longer supported. Committed historical files remain
+available in Git history.
 
 ## Local preview and checks
 
@@ -41,7 +39,6 @@ Run `python3 -m http.server 8000` from the repository root, then open
 `http://localhost:8000`. This is a static HTML site; no Hugo build is required.
 The profile is maintained in `index.html`; `aboutme.html` redirects to that section.
 Run `python3 scripts/check_links.py` to check active local HTML/CSS references.
-Use `--include-archive` to additionally inspect historical pages.
 
 When adding a page, use paths relative to that file. Stylesheets resolve image
 paths from `assets/css/`, for example `../images/MtDana.jpg`.

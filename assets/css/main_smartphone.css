@@ -103,8 +103,6 @@
   background: rgba(255,255,255,0.88);
 }
 .layer_publication_top{
-  min-height: 100vh;
-  height: 100vh;
   background: rgba(255,255,255,0.88);
 }
 .layer_publication{
@@ -112,8 +110,6 @@
   background: rgba(255,255,255,0.88);
 }
 .layer_presentation_top{
-  min-height: 100vh;
-  height: 100vh;
   background: rgba(255,255,255,0.88);
 }
 .layer_presentation{
@@ -284,9 +280,7 @@
 }
 
 .section_publication_top {
-  height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .section_publication {
@@ -294,9 +288,7 @@
 }
 
 .section_presentation_top {
-  height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .section_presentation {
@@ -319,3 +311,10 @@
 .Header1 { font-size: 1.75rem; padding-left: 6%; padding-right: 6%; }
 .Title { font-size: 2rem; padding: 120px 6% 40px; overflow-wrap: anywhere; }
 .aboutme_photo img { height: auto; }
+
+/* Section headings should flow directly into their content on mobile. */
+.section_publication_top .Title,
+.section_presentation_top .Title {
+  margin: 0;
+  padding: 64px 6% 24px;
+}

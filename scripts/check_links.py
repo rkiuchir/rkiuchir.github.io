@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Check local file references without fetching remote resources."""
-import argparse
 from html.parser import HTMLParser
 from pathlib import Path
 import re
@@ -26,16 +25,11 @@ class References(HTMLParser):
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--include-archive', action='store_true')
-    args = parser.parse_args()
     errors = []
     checked = 0
     for path in sorted(ROOT.rglob('*')):
         relative = path.relative_to(ROOT)
         if '.git' in relative.parts or path.suffix not in ('.html', '.css'):
-            continue
-        if relative.parts[0] == 'archive' and not args.include_archive:
             continue
         content = path.read_text(encoding='utf-8')
         if path.suffix == '.html':
