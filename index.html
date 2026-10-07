@@ -8,18 +8,19 @@
 <head>
   <!-- Specify character encoding -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Set the title (Visualize in web browser's tab) -->
   <title> Ryota Kiuchi </title>
 
   <!-- Add css style -->
-  <link rel="stylesheet" href="./css/divider.css">
+  <link rel="stylesheet" href="assets/css/divider.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
   <!-- Add javascript -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="./javascript/nav.js"></script>
+  <script type="text/javascript" src="assets/js/nav.js"></script>
 
   <!-- Setting -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -39,22 +40,22 @@
 <body>
 
   <!-- hamberger menu -->
-  <a class="menu">
+  <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
       <span class="menu_triangle"></span>
       <span class="menu__line menu__line--top"></span>
       <span class="menu__line menu__line--center"></span>
       <span class="menu__line menu__line--bottom"></span>
-  </a>
+  </button>
   
 
-  <nav class="gnav">
+  <nav class="gnav" id="site-navigation" aria-label="Main navigation">
     <div class="gnav__wrap">
         <ul class="gnav__menu">
             <li class="gnav__menu__item"><a href="#sec_profile">Home</a></li>
             <li class="gnav__menu__item"><a href="#sec_aboutme">About me</a></li>
             <li class="gnav__menu__item"><a href="#sec_publication_top">Publications</a></li>
             <li class="gnav__menu__item"><a href="#sec_presentation_top">Presentations</a></li>
-            <li class="gnav__menu__item"><a href="JMA_web.html">Visualizations</a></li>
+            <li class="gnav__menu__item"><a href="visualizations/index.html">Visualizations</a></li>
             <li class="gnav__menu__item"><a href="https://medium.com/@rkiuchir">Blog</a></li>
         </ul>
     </div>
@@ -68,12 +69,12 @@
       <div class="layer_home">
 
         <div class="profile">
-          <img class="index_photo" src="Image/Profile1.png" alt="Profile Photo">
+          <img class="index_photo" src="assets/images/Profile1.png" alt="Profile Photo">
           
           <div class="profile_text">
             <div class="Text_right">
               <p class="index_name"> Ryota Kiuchi, Ph.D. </p> 
-              <p> Data Scientist @ TRAILBLAZER, Japan</p>
+              <p> Manager / Lead Data Scientist @ TRAILBLAZER, Japan</p>
               <p class="Empty"></p>
             </div>
             
@@ -116,20 +117,43 @@
         <div class="Text">
           <div class="Text_left">
 
-            <p class="Bold Affiliation"> Data Scientist @ <a href=https://www.trail-blazer.co.jp>TRAILBLAZER</a>, 
-              Osaka, Japan (Working remotely) </p>
-            <p class="Indent"> - Period: November 2024 - Current </p>
+            <div class="career-company">
+              <p class="Bold Affiliation"><a href="https://www.trail-blazer.co.jp">TRAILBLAZER</a></p>
+              <p>Osaka, Japan (Working remotely)</p>
+              <ul class="career-roles">
+                <li>
+                  <p class="Bold">Manager / Lead Data Scientist</p>
+                  <p>February 2026 - Current</p>
+                </li>
+                <li>
+                  <p class="Bold">Data Scientist</p>
+                  <p>November 2024 - January 2026</p>
+                </li>
+              </ul>
+            </div>
 
-            <p class="Empty"></p>
-            <p class="Bold Affiliation"> Engineering Consultant @ <a href=https://www.kke.co.jp>Kozo Keikaku Engineering (KKE)</a>,
-              Tokyo, Japan　</p>
-              <p class="Indent"> - Period: April 2020 - September 2024 </p>
-  
-            <p class="Empty"></p>
-            <p class="Bold Affiliation"> Visiting Researcher @ <a href=https://www.usgs.gov/centers/earthquake-science-center>U.S. Geological Survey
-              Earthquake Science Center</a>, Menlo Park, CA </p>
-            <p class="Indent"> - Period: May 2016 - March 2019 </p>
-            <p class="Indent"> - Advisor: Dr. Walter Mooney  </p>
+            <div class="career-company">
+              <p class="Bold Affiliation"><a href="https://www.kke.co.jp">Kozo Keikaku Engineering (KKE)</a></p>
+              <p>Tokyo, Japan</p>
+              <ul class="career-roles">
+                <li>
+                  <p class="Bold">Engineering Consultant</p>
+                  <p>April 2020 - September 2024</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="career-company">
+              <p class="Bold Affiliation"><a href="https://www.usgs.gov/centers/earthquake-science-center">U.S. Geological Survey Earthquake Science Center</a></p>
+              <p>Menlo Park, CA</p>
+              <ul class="career-roles">
+                <li>
+                  <p class="Bold">Visiting Researcher</p>
+                  <p>May 2016 - March 2019</p>
+                  <p>Advisor: Dr. Walter Mooney</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
   
@@ -183,20 +207,17 @@
   
         <div class="Text">
           <div class="Text_left">
-            <p class="Bold Affiliation"> Languages </p>
-            <p class="Indent"> - Japanese (Mother tongue) </p>
-            <p class="Indent"> - English (Business level) </p>
-  
+            <p class="Bold Affiliation">Skills</p>
+            <p class="Bold">Programming</p>
+            <p>Python, R, Fortran, MATLAB, Shell scripting</p>
+
             <p class="Empty"></p>
-            <p class="Bold Affiliation"> Skills </p>
-            <p class="Indent"> - Python (Advanced)  </p>
-            <p class="Indent"> - R (Moderate) </p>
-            <p class="Indent"> - Fortran90 (Moderate) </p>
-            <p class="Indent"> - Matlab (Moderate) </p>
-            <p class="Indent"> - C# (Beginner) </p>
-            <p class="Indent"> - Shell Script (Moderate) </p>
-            <p class="Indent"> - Generic Mapping Tools (Moderate) </p>
-            <p class="Indent"> - Seismic Analysis Code (Advanced) </p>
+            <p class="Bold">Tools &amp; Platforms</p>
+            <p>Git, Databricks</p>
+
+            <p class="Empty"></p>
+            <p class="Bold Affiliation">Languages</p>
+            <p>Japanese (Native), English (Professional working proficiency)</p>
             <p class="Empty"></p>
           </div>
         </div>
@@ -223,13 +244,21 @@
       <div class="layer_publication">
 
         <div class="Header1">
-          <p class="Text_left"> Peer-Reviewed Papers </p>
+          <p class="Text_left"> Peer-Reviewed Publications </p>
         </div>
         <hr class='divide'>
 
         <div class="Text_list">
           <div class="Text_left">
               <ol class="List">
+                <li><span class="Author">Kiuchi, R.</span>, W. D. Mooney, and H. M. Zahran (2023).
+                Ground-motion prediction equations for the western Kingdom of Saudi Arabia,
+                <i>U.S. Geological Survey Professional Paper</i>, 1862-O, 31 p.,
+                doi: <a href="https://doi.org/10.3133/pp1862O">10.3133/pp1862O</a>.</li>
+                <li><span class="Author">Kiuchi, R.</span>, W. D. Mooney, and H. M. Zahran (2023).
+                Probabilistic seismic-hazard analysis for the western Kingdom of Saudi Arabia,
+                <i>U.S. Geological Survey Professional Paper</i>, 1862-Q, 15 p.,
+                doi: <a href="https://doi.org/10.3133/pp1862Q">10.3133/pp1862Q</a>.</li>
                 <li> Miyazawa, M., <span class="Author">R. Kiuchi</span>,
                   K. Koketsu (2022).
                   Attenuation Characteristics of High‐Frequency 
@@ -252,27 +281,22 @@
                   Arabia, <i>Bull. Seismol. Soc. Am</i>., <i>109</i>(6),
                   2722–2737, doi:
                   <a href="https://doi.org/10.1785/0120180302">10.1785/0120180302</a>.</li>
-                <li> <span class="Author">Kiuchi, R.</span>,
-                  and J. Mori, Estimates of Radiated Energy
-                  for Large Earthquakes Using Teleseismic P Waves
-                  with Consideration of Strike-slip Earthquakes, <i>in prep</i> </li>
-                <li> <span class="Author">Kiuchi, R.</span>,
-                  W. Mooney, and H. Zahran, Probabilistic
-                  Seismic Hazard Analysis for Harrat Madinah,
-                  Saudi Arabia Using Regional Ground Motion
-                  Prediction Equations, <i>in prep</i> </li>
               </ol>
           </div>
         </div>
 
         <div class="Header1">
-          <p class="Text_left"> Non Peer-Reviewed Papers </p>
+          <p class="Text_left"> Non Peer-Reviewed Publications </p>
         </div>
         <hr class='divide'>
 
         <div class="Text_list">
           <div class="Text_left">
               <ol class="List">
+                <li lang="ja">井野昭夫・<span class="Author">木内亮太</span> (2024).
+                実用面から見た建築分野へのAI活用概論,
+                <i>コンクリート工学</i>, 62(9), 738–743,
+                doi: <a href="https://doi.org/10.3151/coj.62.9_738">10.3151/coj.62.9_738</a>.</li>
                 <li>
                   Katao, H., A. Kubo, T. Yamashina, T. Matsushima,
                   K. Aizawa, S. Sakai, T. Shibutani, S. Nakao, R. Yoshimura,
@@ -421,6 +445,16 @@
         <div class="Text_list">
           <div class="Text_left">
               <ol class="List">
+                <li lang="ja"> 石辺岳男, 小川陽子, 田中裕人, <span class="Author">木内亮太</span>,
+                  高浜勉, 坂元一雄, 西條裕介, 古村美津子, 松浦律子,
+                  震度分布データを用いた機械学習による震源推定の試み,
+                  <i>2023 SSJ Fall Meeting</i>, Yokohama, Japan,
+                  S21-01, Nov., 2023. </li>
+                <li lang="ja"> 倉田悠暉, 松川滉明, 田中裕人, 松元康広, 竹越美佳, 八木尊慈,
+                  <span class="Author">木内亮太</span>, 滝勇太,
+                  機械学習によるフーリエ振幅スペクトルから応答スペクトルを予測する試み,
+                  <i>2023 SSJ Fall Meeting</i>, Yokohama, Japan,
+                  S21P-03, Nov., 2023. </li>
                 <li> 宮澤理稔, <span class="Author">木内亮太</span>, 纐纈 一起,
                   プレート間巨大地震の強震動生成域のための距離減衰式,
                   (Ground Motion Prediction Equation for Strong Motion

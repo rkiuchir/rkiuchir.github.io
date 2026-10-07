@@ -1,0 +1,38 @@
+/* Shared presentation for the directory and individual visualizations. */
+.visualization-page {
+  margin: 0;
+  color: var(--color-text, #6d6968);
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+.visualization-directory {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 112px 6% 48px;
+  box-sizing: border-box;
+}
+.visualization-directory h1 {
+  margin: 20px 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 300;
+  line-height: 1.2;
+}
+.visualization-directory p { margin: 16px 0; }
+.visualization-directory a { color: #245b87; }
+.visualization-list { padding: 0; margin: 32px 0; list-style: none; }
+.visualization-list li { padding: 18px 0; border-bottom: 1px solid #ddd; }
+.visualization-list a { overflow-wrap: anywhere; }
+.visualization-list small { display: inline-block; margin-left: 8px; color: #626262; }
+.visualization-page .Title { margin: 0; padding: 100px 6% 32px; overflow-wrap: anywhere; }
+.visualization-page .Plotly { padding: 0 5%; box-sizing: border-box; }
+.visualization-page .main,
+.visualization-return { display: flex; justify-content: center; margin: 0; padding: 32px 16px; min-height: 0; }
+.visualization-back { display: inline-block; padding: 12px 20px; color: #245b87; border: 1px solid #245b87; border-radius: 6px; text-decoration: none; }
+.visualization-back:hover { color: #fff; background: #245b87; }
+.visualization-back:focus-visible { outline: 3px solid #245b87; outline-offset: 4px; }
+@media (max-width: 1023.98px) {
+  .visualization-directory { padding-top: 80px; }
+  .visualization-page .Title { padding: 80px 6% 24px; font-size: 2rem; }
+  .visualization-page .Plotly { padding: 0 3%; }
+}
