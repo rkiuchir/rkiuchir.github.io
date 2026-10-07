@@ -4,15 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Visualizations — Ryota Kiuchi</title>
+  <link rel="stylesheet" href="../assets/css/divider.css">
   <link rel="stylesheet" href="../assets/css/visualizations.css">
+  <script src="../assets/js/nav.js" defer></script>
 </head>
-<body>
-  <main>
+<body class="visualization-page">
+  <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+      <span class="menu_triangle"></span>
+      <span class="menu__line menu__line--top"></span>
+      <span class="menu__line menu__line--center"></span>
+      <span class="menu__line menu__line--bottom"></span>
+  </button>
+
+
+  <nav class="gnav" id="site-navigation" aria-label="Main navigation">
+    <div class="gnav__wrap">
+        <ul class="gnav__menu">
+            <li class="gnav__menu__item"><a href="../index.html#sec_profile">Home</a></li>
+            <li class="gnav__menu__item"><a href="../index.html#sec_aboutme">About me</a></li>
+            <li class="gnav__menu__item"><a href="../index.html#sec_publication_top">Publications</a></li>
+            <li class="gnav__menu__item"><a href="../index.html#sec_presentation_top">Presentations</a></li>
+            <li class="gnav__menu__item"><a href="index.html">Visualizations</a></li>
+            <li class="gnav__menu__item"><a href="https://medium.com/@rkiuchir">Blog</a></li>
+        </ul>
+    </div>
+  </nav>
+  <main class="visualization-directory">
     <a href="../index.html">← Home</a>
     <h1>Visualizations</h1>
     <p>Earthquake and topography visualizations. Larger pages may take time to load.</p>
     <p>These are saved datasets, not a live earthquake feed.</p>
-    <ul>
+    <ul class="visualization-list">
     <li><a href="JMA_web.html">Earthquake distribution in Japan</a> <small>(6.5 MB)</small></li>
     <li><a href="3DSphericalTopo.html">3D spherical topography</a> <small>(7.2 MB)</small></li>
     <li><a href="3DSphericalTopography.html">3D spherical topography — detailed</a> <small>(28.8 MB)</small></li>
